@@ -1,1 +1,166 @@
-Hello World
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Revolution Robotics</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<header>
+  <div class="small" id="header-scroll">
+    <h1><a href="#home">REVOLUTION ROBOTICS</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#project_detail">PROJECT SOLUTION</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+	<li><a href="#project_members">PROJECT MEMBERS</a></li>
+        <li><a href="#contact">CONTACT_INFO</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!---***************************************--************************************************--->
+<section id="home">
+  <img src="img/e5.jpg"
+</section>
+<!---***************************************--************************************************--->
+<section id="about">
+  <h1>ABOUT</h1>
+  <p>Robots have been in use in the industry since the early 20th century when the first
+    humanoid robot was developed. Modern robots were developed sometime later, initially used
+    in factories as industrial robots. But the field of robotics has come a long way since then,
+    producing digitally programmed and AI-powered robots. These modern robots are used in
+    many cutting-edge fields apart from manufacturing, like surgeries, transportation, and even
+    space exploration. Robots have moved from the role of replacing humans in repetitive and
+    monotonous tasks, to an assisting role, where they work alongside humans. Though great
+    advancements in robotics and AI have been made in the past decade to make them ‘smart’,
+    not much emphasis has been given to making these robots safe, or in other words,
+    collaborative.</p>
+    <p>
+    According to ISO/TS 15066, a collaborative robot is a robot that is capable of being
+    used in a collaborative space. A collaborative space is defined as a space within the operating
+    space (including the workpiece), where the robot system and a human can perform tasks
+    concurrently during the product operation. Most of the modern robots used in the industry
+    can be digitally controlled and many of them are powered by AI, but most of them lack the
+    required safety features that allow them to be fully collaborative. Some companies do make
+    collaborative robots, but most of them are too expensive to buy, and can only be configured
+    for smaller payloads (up to 5kgs in most cases), making them infeasible for regular industrial
+    operation.
+    </p>
+    <p>
+    The main goal of this project is to design a cheap and universal collaborative robotics
+    solution, which can easily be integrated with existing industrial robotic manipulators in use,
+    and can make them collaborative, or in other words, safe enough for humans to work
+    alongside them. The proposed solution will use Computer Vision for object detection, using
+    Depth and vision information from Intel Realsense Depth cameras. Collision meshes will be
+    created after obtaining this information, and instructions will be sent to the robot manipulator
+    to avoid collision without affecting its performance. A Jetson TX1 development board has
+    been chosen for implementing this project since it has the required processing power needed
+    to run computer vision algorithm and can run ROS (Robot operating system) on a customized
+    Linux OS, which has most of the computer vision and dynamic path modeling libraries
+    needed for collision avoidance. It also has enough power to receive feed from multiple
+    Realsense depth cameras and has built-in libraries to communicate with a FANUC robot
+    controller chosen for this project.
+    </p>
+</section>
+<!---***************************************--************************************************--->
+<section id="project_detail">
+  <h1>PROJECT SOLUTION</h1>
+
+</section>
+<!---***************************************--************************************************--->
+<section id="project_members">
+ <h1>PROJECT MEMBERS</h1>
+ <ul class="members">
+   <li>
+ <div class="team-member">
+   <div>
+    <img class="team-member-photo" src="img/as.jpg">
+   </div>
+   <div class="team-member-name">AAYUSH SHARMA</div>
+   <div class="team-member-title">- Hardware Lead</div>
+   <div class="team-member-links">
+     <a class="team-member-linkedin" href="" target="_blank">
+      <img src="img/linkedin.png">
+     </a>
+   </div>
+ </div>
+</li>
+<li>
+ <div class="team-member">
+  <div>
+   <img class="team-member-photo" src="img/ak.jpg">
+  </div>
+  <div class="team-member-name">ARIQ KAPADIA</div>
+  <div class="team-member-title">- Web Developer and Mechanical Lead</div>
+  <div class="team-member-links">
+    <a class="team-member-linkedin" href="https://www.linkedin.com/in/ariq-kapadia-5b3003149"
+     target="_blank"><img src="img/linkedin.png"></a>
+  </div>
+</div>
+</li>
+<li>
+<div class="team-member">
+  <div>
+   <img class="team-member-photo" src="img/rl.jpg">
+  </div>
+  <div class="team-member-name">RYAN LEITE</div>
+  <div class="team-member-title">- Team Lead and Controls Lead</div>
+  <div class="team-member-links">
+    <a class="team-member-linkedin" href="" target="_blank">
+      <img src="img/linkedin.png">
+    </a>
+  </div>
+</div>
+</li>
+</ul>
+<ul class="members">
+  <li>
+<div class="team-member">
+  <div>
+   <img class="team-member-photo" src="img/jw.jpg">
+  </div>
+  <div class="team-member-name">JAMES WATKINSON</div>
+  <div class="team-member-title">- Mechanical and Software Lead</div>
+  <div class="team-member-links">
+    <a class="team-member-linkedin" href="" target="_blank">
+      <img src="img/linkedin.png">
+    </a>
+  </div>
+</div>
+</li>
+<li>
+<div class="team-member">
+  <div>
+   <img class="team-member-photo" src="img/bz.jpg">
+  </div>
+  <div class="team-member-name">BENJAMIN ZWICKER</div>
+  <div class="team-member-title">- Software and Autonomous Lead</div>
+  <div class="team-member-links">
+    <a class="team-member-linkedin" href="" target="_blank">
+      <img src="img/linkedin.png">
+    </a>
+  </div>
+</div>
+</li>
+</ul>
+</section>
+<!---***************************************--************************************************--->
+<section id="contact">
+ <h1>CONTACT INFO</h1>
+</section>
+<!---***************************************--************************************************--->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="javacode.js"></script>
+
+</body>
+</html>
