@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html >
 <head>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+</style>
+
   <meta charset="UTF-8">
   <title>Revolution Robotics</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
   <link rel="stylesheet" href="css/style.css">
-
   
 </head>
 
@@ -27,9 +42,9 @@
   </div>
 </header>
 <!---***************************************--************************************************--->
-<section id="home">
-  <img src="img/e5.jpg" class="mw-100"
-</section>
+<div class="imgbox">
+  <img class="center-fit" src='img/e5.jpg'>
+</div>
 <!---***************************************--************************************************--->
 <section id="about">
   <h1>ABOUT</h1>
