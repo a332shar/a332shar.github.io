@@ -180,3 +180,23 @@ footer ul {
   opacity: 0.9;
   transition: opacity 0.4s;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  height: 150px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact_info ul {
+  display: inline-table;
+}
+.links {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px 5px 5px;
+}
