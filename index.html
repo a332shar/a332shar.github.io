@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    .imgbox {
-        display: grid;
-        height: 100%;
-    }
-    .center-fit {
-        max-width: 100%;
-        max-height: 100vh;
-        margin: auto;
-    }
-</style>
 
   <meta charset="UTF-8">
   <title>Revolution Robotics</title>
@@ -26,26 +11,35 @@
 
 <body>
   
-<header>
+<header class="header" style="width: 965px; position: fixed; top: 0px;">
   <div class="small" id="header-scroll">
     <h1><a href="#home">REVOLUTION ROBOTICS</a></h1>
-    <nav>
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#project_detail">PROJECT SOLUTION</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-	      <li><a href="#project_members">PROJECT MEMBERS</a></li>
-        <li><a href="#contact_info">CONTACT INFO</a></li>
+    <nav id="navbar">
+      <a class="jump-menu"></a>
+      <ul id="mobile-nav">
+        <li class><a href="#home">HOME</a></li>
+        <li class><a href="#about">ABOUT</a></li>
+        <li class><a href="#project_detail">PROJECT SOLUTION</a></li>
+        <li class><a href="blog.html">BLOG</a></li>
+	      <li class><a href="#project_members">PROJECT MEMBERS</a></li>
+        <li class><a href="#contact_info">CONTACT INFO</a></li>
+      </ul>
+    </nav>
+    <nav class="menu">
+      <ul id="nav">
+        <li class><a href="#home">HOME</a></li>
+        <li class="current"><a href="#about">ABOUT</a></li>
+        <li class><a href="#project_detail">PROJECT SOLUTION</a></li>
+        <li class><a href="blog.html">BLOG</a></li>
+	      <li class><a href="#project_members">PROJECT MEMBERS</a></li>
+        <li class><a href="#contact_info">CONTACT INFO</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <!---***************************************--************************************************--->
 <section id="home">
-<div class="imgbox">
-  <img class="center-fit" src='img/e5.jpg'>
-</div>
+<div class=""></div>
 </section>
 <!---***************************************--************************************************--->
 <section id="about">
@@ -178,7 +172,7 @@
     <div class="row">
       <div class="column" style="background-color:#ccc;">
         <h2>Contact Information</h2>
-        <p>Email: revolutionrobotics2022@gmail.com</p>
+        <div><p>Email: revolutionrobotics2022@gmail.com</p></div>
       </div>
       <div class="column" style="background-color:#ccc;">
         <h2>Links</h2>
