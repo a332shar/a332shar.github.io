@@ -25,46 +25,48 @@ html, button, input, select, textarea {
     font-size: 20px;
     text-align: justify;
   }
-  .members ul {
-    margin-bottom: 10%;
+  .solution-img {
+    display: block;
+    align-items: center;
   }
-  .members ul li {
-    display: inline-block;
-    padding: 1%;
+  .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .team-member{
+    min-width: 150px;
+    max-width: 150px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .team-member-photo{
    width: 150px;
    height: 150px;
    border-radius: 50%;
-   display: inline-block;
-   margin: auto;
   }
   .team-member img{
     vertical-align: middle;
-    display: inline-block;
-    margin: auto;
+    border: 0;
   }
   .team-member-name {
     color: #757575;
     margin: 10px 0px;
+    font-size: 1em;
   }
   .team-member-title{
     padding-bottom: 10px;
-  }
-  .members ul {
-    display: inline-flex;
-    padding-bottom: 150px;
-  }
-  .members li{
-    display: inline-block;
-    text-align: center;
-    margin: 43px;
+    font-style: italic;
+    color: #757575;
   }
   .team-member-links{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 25px;
   }
   .team-member-linkedin {
     display: block;
@@ -72,7 +74,19 @@ html, button, input, select, textarea {
     height: 32px;
     opacity: 0.9;
     transition: opacity 0.4s;
+    background: url(/img/linkedin.png) no-repeat center;
+    background-size: 32px 32px;
   }
+.sponsers{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 100px 100px 100px;
+}
+.sponsers img {
+  height: 200px;
+  min-width: none;
+  max-width: 450px;
+}  
   
   /* Preload assets here. */
   body:after {
@@ -130,13 +144,7 @@ html, button, input, select, textarea {
     color: #fff;
   }
   
-  html, body {
-    background: #000;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+ 
   .hideme {opacity: 0;}
   .hideme-slide {opacity: 0; bottom: -100% !important;}
   .fade {
@@ -847,20 +855,8 @@ html, button, input, select, textarea {
     background: url(/img/github.png) no-repeat center;
     background-size: 65px 65px;
   }
-  .contact .icons .stackoverflow {
-    background: url(/img/stackoverflow.png) no-repeat center;
-    background-size: 65px 65px;
-  }
-  .contact .icons .hackerrank {
-    background: url(/img/hackerrank.png) no-repeat center;
-    background-size: 65px 65px;
-  }
-  .contact .icons .codecademy {
-    background: url(/img/codecademy.png) no-repeat center;
-    background-size: 65px 65px;
-  }
-  .contact .icons .linkedin {
-    background: url(/img/linkedin.png) no-repeat center;
+  .contact .icons .youtube {
+    background: url(/img/youtube.png) no-repeat center;
     background-size: 65px 65px;
   }
   .contact .icons li a:hover {
@@ -1121,6 +1117,9 @@ html, button, input, select, textarea {
     .portfolio-element div span {font-size: 16px;}
     .portfolio-element div span span.project-position {font-size: 14px;}
     .contactForm {width: 100%;}
+    .team{flex-direction: column;}
+    .team-member{font-size: 1.2em;}
+    .sponsers{flex-direction: column;max-width:300px ;}
   }
   
   /* Tablet portrait sizes (devices and browsers) */
@@ -1149,6 +1148,7 @@ html, button, input, select, textarea {
   /* All mobile sizes (devices and browser) */
   @media only screen and (max-width: 795px) {
     .main-title ul {margin-top: 0; height: 80px; font-size: 35px;}
+    .team-member{width:50%;}
     .main-title .spacer {margin: 20px auto;}
     .work-exp-left-0, .work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2, .work-exp-left-3 {width: 100%; margin-left: 0;}
   }
