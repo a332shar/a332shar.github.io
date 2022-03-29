@@ -28,6 +28,12 @@ html, button, input, select, textarea {
   .solution-img {
     display: block;
     align-items: center;
+    margin:auto;
+  }
+  .solution-video {
+    display: flex;
+    justify-content: center;
+    margin: auto;    
   }
   .team {
     display: flex;
